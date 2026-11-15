@@ -1,0 +1,7 @@
+services:
+  fleet:
+    build: .
+    ports: ["5000:5000"]
+    volumes: ["fleet-data:/data"]
+volumes:
+  fleet-data:
